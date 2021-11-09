@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index.html</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css?v=2" />
+<link rel="stylesheet" href="css/styles.css?v=29" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+/* .overlaying {
+	display:none!important;
+}
+#bodysrart {
+	display:block!important;
+} */
+.secondoverlay .updatetexts h2::before {
+	background-image: url(images/preloader-bg.jpg);
+}
+#page1 {
+  background-image: url(images/spring.jpg);
+  
+}
+#page2 {
+  background-image: url(images/summber.jpg);
+}
+
+#page3 {
+  background-image: url(images/fall.jpg);
+}
+
+#page4 {
+  background-image: url(images/winter.jpg);
+}
+</style>
+<script>
+window.onload = function() {
+		setTimeout(function(){
+ 	document.getElementById("firstoverlay").style.display='none';
+  	document.getElementById("secondoverlay").style.display='block';
+ 	starttext()
+ 	}, 2400);
+  };
+function starttext() {
+ setTimeout(function(){
+					document.getElementById("secondoverlay").style.display='none';
+					document.getElementById("bodysrart").style.display='block';
+				setTimeout(function(){	
+					makescreenhere()
+				}, 600);	
+ }, 3000);	
+}
+</script>
+</head>
+<body>
+<!--------------------FIrst OVERLAY--------------------------->
+<div class="firstoverlay overlaying" id="firstoverlay" style="display:block;">
+  <div class="containerss">
+    <div class="glitch" data-text="ELISABÉTH">ELISABÉTH</div>
+    <div class="glow">ELISABÉTH</div>
+    <p class="subtitle">IMPRACTICAL DEVELOPER</p>
+  </div>
+  <div class="scanlines"></div>
+</div>
+<!--------------------END OVERLAY--------------------------->
+<div class="secondoverlay overlaying" id="secondoverlay" style="display:none;">
+	<div class="container">
+    <div class="col-md-3"></div>
+     <div class="col-md-9 col-xs-12">
+    <div class="updatetexts">
+    <h2 data-text="BECOME&nbsp;A&nbsp;LEGEND">BECOME&nbsp;A&nbsp;LEGEND</h2>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="bodystart" id="bodysrart" style="display:none;">
+<!--------------------START SECTION 1--------------------------->
+<div class="section-1">
+    <video id="video" autoplay loop>
+      <source src="images/bg-vd.mp4?v=1" type="video/mp4">
+      <source src="images/bg-vd.mp4?v=1" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+    <audio id="audio" autoplay loop >
+        <source src="images/mixkit-game-show-suspense-waiting-667.wav" type="audio/ogg">
+        <source src="images/mixkit-game-show-suspense-waiting-667.wav" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <div class="youtubecontent">
+      <div class="container">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h4>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</h4>
+          <p>with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software .</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h4>second</h4>
+          <p>with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--------------------END  SECTION 1--------------------------->
+<!--------------------START SECTION 2--------------------------->
+  <div id="page1" class="pageBlock">Spring</div>
+  <div id="page2" class="pageBlock">Summer</div>
+  <div id="page3" class="pageBlock">Fall</div>
+  <div id="page4" class="pageBlock">Winter</div>
+<!--------------------END SECTION 2--------------------------->
+<!--------------------START SECTION 3--------------------------->
+<section class="section-3" style="display:block;">
+    <div class="container">
+      <div class="pareffect" id="flex-1">
+        <div class="wid-50">
+          <p>Lorem ipsum stes dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+        <div class="wid-50 imgsect"> <img id="img-moon" src="images/sect-1.jpg" alt="moon" /> </div>
+      </div>
+      <div class="pareffect" id="flex-2">
+        <div class="wid-50">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+        <div class="wid-50 imgsect"> <img id="img-moon" src="images/sect-2.jpg" alt="moon" /> </div>
+      </div>
+      <div class="pareffect" id="flex-3">
+        <div class="wid-50">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+        <div class="wid-50 imgsect"> <img id="img-moon" src="images/sect-3.jpg" alt="moon" /> </div>
+      </div>
+    </div>
+</section>
+<!--------------------END  SECTION 3--------------------------->
+<!--------------------START FOOTER  SECTION --------------------------->
+  <footer id="footersect">
+    <section class="section-4">
+      <div id="star-field"></div>
+      <div id="rectsects"></div>
+      <div class="footersect" id="mainsfootset">
+        <div class="container" style="margin-top: 146px">
+          <div class="col-md-12">
+            <h3 class="suhding">Let's work together!</h3>
+            <p class="subhead">We welcome you to contact us for more information about any of our products or services.</p>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 icosectin">
+            <div class="col-md-3 col-sm-12 col-xs-12 svgiconsg">
+              <svg version="1.1"   class="ut-vivus-draw ut-initialized ut-svg-loaded path" data-settings="{&quot;draw_svg_icons&quot;:&quot;yes&quot;,&quot;draw_svg_type&quot;:&quot;oneByOne&quot;,&quot;draw_svg_delay&quot;:&quot;0&quot;,&quot;draw_svg_duration&quot;:&quot;100&quot;}" id="ut-svg-5f8f09c7a5cdd" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <path class="icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M24,36c0,4.418,3.582,9,8,9h4" style="stroke-dasharray: 18, 20; stroke-dashoffset: 0;"></path>
+                <path class="icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M33,49L36,45L33,41" style="stroke-dasharray: 10, 12;
+ stroke-dashoffset: 0;"></path>
+                <path class="icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M42,36c0-4.418-3.582-9-8-9h-4" style="stroke-dasharray: 18, 20; stroke-dashoffset: 0;"></path>
+                <path class="icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M33,23L30,27L33,31" style="stroke-dasharray: 10, 12; stroke-dashoffset: 0;"></path>
+                <path class="path icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M23,8L10,8L10,63L54,63L54,8L41,8" style="stroke-dasharray: 180, 182;
+ stroke-dashoffset: 0;"></path>
+                <path class="path icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M36,5L36,1L28,1L28,5L24,5L22,13L42,13L40,5Z" style="stroke-dasharray: 61, 63; stroke-dashoffset: 0;"></path>
+              </svg>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12">
+              <h2>Let’s Talk About Your Project</h2>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            </div>
+          </div>
+          <div class="col-md-4 icosectin">
+            <div class="col-md-3 col-sm-12 col-xs-12 svgiconsg">
+              <svg version="1.1" class="ut-vivus-draw ut-initialized ut-svg-loaded" data-settings="{&quot;draw_svg_icons&quot;:&quot;yes&quot;,&quot;draw_svg_type&quot;:&quot;oneByOne&quot;,&quot;draw_svg_delay&quot;:&quot;0&quot;,&quot;draw_svg_duration&quot;:&quot;100&quot;}" id="ut-svg-5f8f09d2951e1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <path class="path icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M1,30L63,1L23,41Z" style="stroke-dasharray: 150, 152; stroke-dashoffset: 0;"></path>
+                <path class="path icon-draw" fill="none" stroke="#ec003b" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M34,63L63,1L23,41Z" style="stroke-dasharray: 150, 152; stroke-dashoffset: 0;"></path>
+              </svg>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12">
+              <h2>Let’s Talk About Your Project</h2>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            </div>
+          </div>
+          <div class="col-md-4 icosectin">
+            <div class="col-md-3 col-sm-12 col-xs-12 svgiconsg">
+              <svg version="1.1" class="ut-vivus-draw ut-initialized ut-svg-loaded" data-settings="{&quot;draw_svg_icons&quot;:&quot;yes&quot;,&quot;draw_svg_type&quot;:&quot;oneByOne&quot;,&quot;draw_svg_delay&quot;:&quot;0&quot;,&quot;draw_svg_duration&quot;:&quot;100&quot;}" id="ut-svg-5f8f09d294d6d" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <path class="path" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M3.7079999999999984,35A28.292,28.292 0,1,1 60.292,35A28.292,28.292 0,1,1 3.7079999999999984,35" style="stroke-dasharray: 178, 180; stroke-dashoffset: 0;"></path>
+                <path class="path" fill="none" stroke="#ec003b" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M37,40L45,21L26,29L19,47Z" style="stroke-dasharray: 80, 82; stroke-dashoffset: 0;"></path>
+                <path class="path" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M26,29L37,40" style="stroke-dasharray: 16, 18; stroke-dashoffset: 0;"></path>
+                <path class="path" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M36.9,7C36.965,6.677,37,6.342,37,6 c0-2.761-2.239-5-5-5s-5,2.239-5,5c0,0.342,0.035,0.677,0.1,1" style="stroke-dasharray: 18, 20; stroke-dashoffset: 0;"></path>
+                <path class="path-two" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M32,7L32,12" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                <path class="path-two" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M32,58L32,63" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                <path class="path-two" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M60,35L55,35" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                <path  class="path-two" fill="none" stroke="#ec003b" stroke-width="2" stroke-miterlimit="10" d="M9,35L4,35" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+              </svg>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12">
+              <h2>Let’s Talk About Your Project</h2>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            </div>
+          </div>
+          <div class="col-md-12  col-sm-12 col-xs-12">
+            <p class="calluss">CALL: 123-456-789</p>
+            <p class="emailuss"><a href="#">your@email.com</a></p>
+
+            <ul class="socialmedia">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <p class="copyright">BROOKLYN. POWERED BY UNITED THEMES™</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+</div>  
+<script src="js/jquery.min.js"></script>
+<script>
+function parallax(getid,updown,std) {
+	 var scrollPos = $(window).scrollTop();
+	 $('#'+getid+' img').css('margin-top', std+'px');
+}
+var lastScrollTop = 0;
+var counti=0;
+var lastScrollTop_2 = 0;
+var counti_2=0;
+var lastScrollTop_3 = 0;
+var counti_3=0;
+window.addEventListener('scroll', function() {
+	var element = document.querySelector('#flex-1');
+	var position = element.getBoundingClientRect();
+	if(position.top < window.innerHeight && position.bottom >= 0) {
+	  var st = $(document).scrollTop();
+	   var finalval =50-parseInt(counti)*2.5;
+	   if (st > lastScrollTop){
+		   parallax('flex-1','down',finalval);
+		   if(counti<30)
+		   	{
+				counti++;	
+			}
+	   } else {
+		   parallax('flex-1','up',finalval);
+		   if(counti>0)
+		   	{
+				counti--;	
+			}
+	   }
+	   lastScrollTop = st;
+	}
+	var element_2 = document.querySelector('#flex-2');
+	var position_2 = element_2.getBoundingClientRect();
+	if(position_2.top < window.innerHeight && position_2.bottom >= 0) {
+	  var st_2 = $(document).scrollTop();
+	  var finalval_2 =40-parseInt(counti_2)*2.5;
+	   if (st_2 > lastScrollTop_2){
+		   parallax('flex-2','down',finalval_2);
+		    if(counti_2<40)
+		   	{
+				counti_2++;	
+			}
+	   } else {
+		   parallax('flex-2','up',finalval_2);
+		   if(counti_2>0)
+		   	{
+				counti_2--;	
+			}
+	   }
+	   lastScrollTop_2 = st_2;
+	}
+	var element_3 = document.querySelector('#flex-3');
+	var position_3 = element_3.getBoundingClientRect();
+	if(position_3.top < window.innerHeight && position_3.bottom >= 0) {
+	  var st_3 = $(document).scrollTop();
+	   var finalval_3 =30-parseInt(counti_3)*2.5;
+	   if (st_3 > lastScrollTop_3){
+		   parallax('flex-3','down',finalval_3);
+		    if(counti_3<30)
+		   	{
+				counti_3++;	
+			}
+	   } else {
+		   parallax('flex-3','up',finalval_3);
+		   if(counti_3>0)
+		   	{
+				counti_3--;	
+			}
+	   }
+	    console.log(counti_3);
+	   lastScrollTop_3 = st_3;
+	}
+});
+</script>
+<script>
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+$(window).scroll(function () {
+    $('#footersect').each(function () {
+        if (isScrolledIntoView(this) === true) {
+            $(this).addClass('footervisible');
+        }
+    });
+
+});
+</script>
+<script>
+function makescreenhere() {
+  var widscreen = screen.width;
+  var clientwsder = document.getElementById('mainsfootset').clientWidth;
+  document.getElementById("rectsects").style.borderRight = clientwsder+'px solid transparent';
+  var starFieldWidth = parseInt(widscreen)-20;
+  var clientHeight = document.getElementById('mainsfootset').clientHeight;
+  var maincliheight = parseInt(clientHeight)+50;
+  document.getElementById("star-field").style.height=maincliheight+'px';
+  addStars(starFieldWidth, maincliheight, 50);
+  animateStars(starFieldWidth, 2);
+}
+function addStars(starFieldWidth, starFieldHeight, noOfStars) {
+  var starField = document.getElementById("star-field");
+  var numberOfStars = noOfStars;
+  for (var i = 0; i < numberOfStars; i++) {
+    var star = document.createElement("div");
+    star.className = "star";
+    var topOffset = Math.floor(Math.random() * starFieldHeight + 1);
+    var leftOffset = Math.floor(Math.random() * starFieldWidth + 1);
+    star.style.top = topOffset + "px";
+    star.style.left = leftOffset + "px";
+    star.style.position = "absolute";
+    starField.appendChild(star);
+  }
+}
+function animateStars(starFieldWidth, speed) {
+  var starField = document.getElementById("star-field");
+  var stars = starField.childNodes;
+
+  function getStarColor(index) {
+    if (index % 8 == 0) return "red";
+    else if (index % 10 == 0) return "yellow";
+    else if (index % 17 == 0) return "blue";
+    else return "white";
+  }
+
+  function getStarDistance(index) {
+    if (index % 6 == 0) return "";
+    else if (index % 9 == 0) return "near";
+    else if (index % 2 == 0) return "far";
+    else return 0;
+  }
+  function getStarRelativeSpeed(index) {
+    if (index % 6 == 0) return 1;
+    else if (index % 9 == 0) return 2;
+    else if (index % 2 == 0) return -1;
+    else return 0;
+  }
+  setInterval(function () {
+    for (var i = 1; i < stars.length; i++) {
+      stars[i].className =
+        "star" + " " + getStarColor(i) + " " + getStarDistance(i);
+
+      var currentLeft = parseInt(stars[i].style.left, 10);
+      var leftChangeAmount = speed + getStarRelativeSpeed(i);
+      var leftDiff;
+      if (currentLeft - leftChangeAmount < 0) {
+        leftDiff = currentLeft - leftChangeAmount + starFieldWidth;
+      } else {
+        leftDiff = currentLeft - leftChangeAmount;
+      }
+      stars[i].style.left = leftDiff + "px";
+    }
+  }, 20);
+}
+</script>
+<script>
+    $(document).ready(function(){
+        setTimeout(playvo,1000);
+        function playvo(){
+            $('video').play();
+            $('audio').play();
+        }
+        $(window).click(function(){
+            $('#video').play();
+            $('#audio').play();
+        });
+        $(window).click();
+    });
+</script>
+</body>
+</html>
