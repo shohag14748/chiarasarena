@@ -373,16 +373,21 @@ function animateStars(starFieldWidth, speed) {
 </script>
 <script>
     $(document).ready(function(){
-        setTimeout(playvo,1000);
-        function playvo(){
-            $('#video').play();
-            $('#audio').play();
-        }
-        $(window).click(function(){
-            $('#video').play();
-            $('#audio').play();
-        });
-        $(window).click();
+      // $("#video")[0].play();
+
+// $("#video_player")[0].autoplay = true;
+document.getElementById("video").setAttribute('autoplay', true);
+
+        // setTimeout(playvo,1000);
+        // function playvo(){
+        //     $('#video').play();
+        //     $('#audio').play();
+        // }
+        // $(window).click(function(){
+        //     $('#video').play();
+        //     $('#audio').play();
+        // });
+        // $(window).click();
     });
 </script>
 </body>
